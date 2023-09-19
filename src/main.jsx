@@ -1,23 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import './styles/general.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import "./index.css";
 import Home from './pages/Home.jsx';
 import Register from './pages/Register.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
-  {
-    path: "login",
-    element: <Login />,
+    errorElement: < NotFoundPage />,
   },
   {
     path: "/register",

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url('../Fonts/ClashDisplay_Complete/ClashDisplay-Semibold.otf') format('truetype');
+}
+
+.mont {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clash {
+  font-family: 'Clash Display', sans-serif;
+}
+
+.btn-bg {
+  border: 1px solid linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+
+.btn-border {
+  background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+}
+
+.contact-css {
+  background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
