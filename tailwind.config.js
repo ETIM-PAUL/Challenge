@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'montserrat': ['"Montserrat"'],
+        "clash-display" : ["Clash Display"],
+        "unica": ["Unica One"]
       },
       colors: {
         'input-bg-color': 'rgba(255, 255, 255, 0.03)'

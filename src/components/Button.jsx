@@ -6,6 +6,7 @@ const Button = ({ text, className, link, onClick }) => {
     <div className='capitalized'>
       <Link to={link}>
         <button type="submit" className={className}>
+
           {text}
         </button>
       </Link>

@@ -1,0 +1,74 @@
+@tailwind components;
+
+@layer components {
+  p {
+    @apply text-sm;
+  }
+
+  .headingText {
+    @apply font-bold font-clash-display;
+
+    span {
+      @apply text-[#D434FE];
+    }
+  }
+
+  .section-wrapper {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-sect {
+    span {
+      @apply text-[#D434FE] text-base;
+    }
+  }
+
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .timer {
+    @apply flex gap-8;
+
+    p {
+      @apply text-6xl;
+    }
+
+    span {
+      @apply font-montserrat text-sm;
+    }
+  }
+
+  .timeline {
+    @apply flex items-center gap-24 pt-16 relative;
+
+    h3 {
+      @apply text-2xl mb-3 text-[#D434FE] font-bold;
+    }
+
+    .cell {
+      @apply w-[450px];
+    }
+  }
+
+  .sponsors {
+    @apply relative h-full w-full grid place-content-center;
+
+    &:nth-child(-n + 3)::before {
+      @apply content-[''] absolute bg-[#d434fe] -bottom-[30%] left-[5%] w-[90%] h-[3px] !important;
+    }
+
+    &::after {
+      @apply content-[''] absolute bg-[#d434fe] bottom-0 -right-[9%] w-[3px] h-[90%] !important;
+    }
+    &:nth-child(3n):after {
+      @apply hidden !important;
+    }
+  }
+
+  /* .flareIcon {
+    content: "";
+    background: rgb(13, 0, 228);
+    
+  } */
+}
