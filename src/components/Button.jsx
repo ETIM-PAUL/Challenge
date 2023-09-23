@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Button = ({ text, style, link }) => {
+const Button = ({ text, className, link, onClick }) => {
   return (
     <div className='capitalized'>
       <Link to={link}>
-        <button className={`${style === "register" ? "btn-bg border border-[#9A39FF]" : "btn-border "} h-14 px-8 rounded  }`}>
+        <button type="submit" className={className}>
           {text}
         </button>
       </Link>
