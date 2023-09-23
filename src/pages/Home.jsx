@@ -36,7 +36,7 @@ import { useState } from "react";
 
 const Home = () => (
   <div className="bg-[#150E28] text-white w-screen overflow-hidden">
-    <TopNav style="home" link={"/register"} />
+      <TopNav style="home" className={"btn-bg border border-[#9A39FF] h-14 px-8 rounded"} link={"/register"} />
     <BorderLine />
 
     <div className="section-wrapper relative z-50 pr-12">
@@ -511,6 +511,7 @@ const QnA = ({ q, a }) => {
   const [isOpened, setIsOpen] = useState(false);
 
   return (
+
     <div className="py-3 border-b border-b-[#D434FE]">
       <div
         className="flex justify-between items-center"
@@ -520,6 +521,7 @@ const QnA = ({ q, a }) => {
         <img className="w-4 h-7" src={StarPu} />
       </div>
       {!!isOpened && <p className="p-2">{defaultAns}</p>}
+
     </div>
   );
 };

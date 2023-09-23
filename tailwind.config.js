@@ -12,7 +12,7 @@ module.exports = {
         "unica": ["Unica One"]
       },
       colors: {
-        'btn-bg-color': 'linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)'
+        'input-bg-color': 'rgba(255, 255, 255, 0.03)'
       },
     },
   },

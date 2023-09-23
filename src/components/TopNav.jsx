@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from './Button'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-const TopNav = ({ style, link }) => {
+const TopNav = ({ style, link, className }) => {
   return (
-    <div className="navbar justify-between px-28 py-10">
+    <div className="navbar justify-between px-32 py-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,13 +19,29 @@ const TopNav = ({ style, link }) => {
       </div>
       <div className="navbar-center mont text-white navbar-en hidden lg:flex gap-10 sp">
         <ul className="menu menu-horizontal text-base text-normal">
+<NavLink to="/timeline" className={({ isActive, isPending }) =>
+    isActive ? "active-css" : ""
+  }>
           <li className='px-4'>Timeline</li>
+</NavLink>
+<NavLink to="/overview" className={({ isActive, isPending }) =>
+    isActive ? "active-css" : ""
+  }>
           <li className='px-4'>Overview</li>
+</NavLink>
+<NavLink to="/faqs" className={({ isActive, isPending }) =>
+    isActive ? "active-css" : ""
+  }>
           <li className='px-4'>FAQs</li>
-          <li className='px-4 contact-css'>Contact</li>
+</NavLink>
+ <NavLink to="/contact-us" className={({ isActive, isPending }) =>
+    isActive ? "active-css" : ""
+  }>
+          <li className='px-4'>Contact</li>
+ </NavLink>         
         </ul>
         <div className="navbar-en">
-          <Button text="Register" style={style} link={link} />
+          <Button text="Register" className={className} link="/register" />
         </div>
       </div>
     </div>
